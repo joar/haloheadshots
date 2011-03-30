@@ -1,0 +1,1 @@
+For some reason, New Alexandria is named elegy.png and Exodus is named newalexandria.png.  I don't know why, but that's why I put these images in the Misc folder and not in the Maps folder.

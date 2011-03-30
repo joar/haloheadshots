@@ -1,0 +1,25 @@
+This collection and the contained images are provided under no personal license by myself, HaLo2FrEeEk; However, All assets are to be used only under the terms of the Microsoft Game Content Usage Rules, found here:
+
+http://www.xbox.com/en-US/Community/Developer/Rules
+
+Please make sure the use of the assets in this collection in your project are in compliance with these rules.
+
+Further, this collection was put together by HaLo2FrEeEk (http://infectionist.com/).  It was posted by HaLo2FrEeEk on Bungie.net, Infectionist.com, Halo.Bungie.org, and HighImpactHalo.org as noted in the Changelog below.  I welcome alterations and additions to this collection by the community, the only thing that I ask is that the original text of this license file remain unchanged.  If you make any alterations or additions to this collection, please use the section marked below for any comments and notes.
+
+And finally, have fun with this, go make some awesome apps!
+
+~HaLo2FrEeEk
+http://infectionist.com/
+
+Obligatory notice:
+
+The "Ultimate API Image Pack" was created under Microsoft’s “Game Content Usage Rules” using assets from Halo: Reach, © Microsoft Corporation.
+
+/***************************************************************************\
+|******************************* CHANGE LOG ********************************|
+|****************** USE THIS SECTION FOR COMMENTS / NOTES ******************|
+\***************************************************************************/
+
+12/04/2010 - Original Release by HaLo2FrEeEk to Bungie.net, Infectionist.com, Halo.Bungie.org, and HighImpactHalo.org
+12/06/2010 - Original license file modified to fix spelling errors.  My bad.
+12/10/2010 - Updated collection with an Auntie Dot loading animation (located in the Misc folder)
