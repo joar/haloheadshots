@@ -17,5 +17,5 @@ server.
 
 # Setup
 
-1.	Edit `config-example.php` and insert the relevant information
+1.	Rename `config-example.php` to `config.php` and insert the relevant information
 2.	You should be good to go.
