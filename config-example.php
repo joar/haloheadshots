@@ -4,4 +4,5 @@ class config {
 	const useCloudFiles = true; // Right now, there is no other option (v0.1)
 	const cloudFilesUser = ''; // Rackspace Cloud Files user
 	const cloudFilesKey = ''; // Rackspace Cloud files API key
+	const cloudFilesApplicationExecutedImageTTL = 60 * 60 * 24 * 7; // Image cache TTL, in seconds
 }
