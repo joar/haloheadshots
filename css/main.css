@@ -178,15 +178,19 @@ input[type=submit].active {
 	outline: thin solid #aaa;
 	margin-right: 20px;
 	background: #000;
-	background: -webkit-gradient(linear, 0% 60%, 0% 100%, from(#000), to(#222));
-	background: -moz-linear-gradient( center bottom, #222 0%, #000 40% );
+	background: -webkit-gradient(linear, 0% 60%, 0% 100%, from(#222), to(#222));
+	background: -moz-linear-gradient( center bottom, #222 0%, #222 40% );
 	padding: 18px;
 	position: relative;
 	height: 399px;
+	overflow: hidden;
 	/*
 	width: 207px;
 	float: left;
 	*/
+}
+.playerModel .playerModelImage {
+	margin: -50px 0 0 -70px;
 }
 .playerModel .playerEmblem {
 	position: absolute;
