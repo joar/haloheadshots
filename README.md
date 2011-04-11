@@ -19,3 +19,11 @@ server.
 
 1.	Rename `config-example.php` to `config.php` and insert the relevant information
 2.	You should be good to go.
+
+# Licensing
+
+You are free to use and develop this application under the circumstances that you
+
+*	Share alike and contribute your derivations to the original repository
+
+That is all.
