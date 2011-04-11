@@ -3,7 +3,7 @@
 <?php if ( $this->data->Player ): ?>
 	<div class="playerModel span-5">
 		<img class="playerEmblem" src="<?php echo $reachTools->cacheImage( tools::handle( $this->data->Player->gamertag ) . 'PlayerEmblem50', reachApiTools::getEmblemUri( $this->data->Player->ReachEmblem, 50 ), 'png') ?>" alt="<?php echo $this->data->Player->gamertag ?>'s emblem" />
-		<img class="playerModelImage" src="<?php echo $reachTools->cacheImage( tools::handle( $this->data->Player->gamertag ) . 'PlayerImage', reachApiTools::bungieUrl . $this->data->PlayerModelUrl, 'png') ?>" alt="<?php echo $this->data->Player->gamertag ?>" />
+		<img class="playerModelImage" src="<?php echo $reachTools->cacheImage( tools::handle( $this->data->Player->gamertag ) . 'PlayerImageHiRes', reachApiTools::bungieUrl . $this->data->PlayerModelUrlHiRes, 'png') ?>" alt="<?php echo $this->data->Player->gamertag ?>" />
 	</div>
 	<div class="span-16 last">
 		<h2 title="First active <?php echo date('Y-m-d H:i', reachApiTools::convertReachDate( $this->data->Player->first_active ) ) ?>, last seen <?php echo date('Y-m-d H:i', reachApiTools::convertReachDate( $this->data->Player->last_active ) ) ?>">
