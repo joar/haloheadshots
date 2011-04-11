@@ -8,7 +8,7 @@ require 'reachApiJson.php';
 require 'Savant3.php';
 require 'tools.class.php';
 require '/home/jwandborg/git/php-cloudfiles/cloudfiles.php';
-require '/home/jwandborg/git/predis/lib/Predis.php';
+require '/home/jwandborg/git/predis/lib/Predis.php'; # // Not needed as long as ajax/autocomplete isn't working.
 
 ini_set('user_agent', 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.8 Safari/534.7');
 
