@@ -39,10 +39,16 @@ class reachApiTools {
 	public function cacheImage( $key, $imageUrl, $fileExtension = 'png' ) {
 		try {
 			$image = $this->cloudFilesContainer->get_object( $key );
-			#self::log( $image );
+			if ( time() - strtotime( $image->last_modified ) > config::cloudFilesApplicationExecutedImageTTL ) {
+				self::log('TTL for ' . $key . ' is reached, updating.');
+				throw new NoSuchObjectException('Forcing image update');
+			}
+			self::log( $image );
 			return $image->public_uri();
 		} catch (NoSuchObjectException $e ) {
-			$image = $this->cloudFilesContainer->create_object( $key );
+			if ( ! $image->last_modified ) {
+				$image = $this->cloudFilesContainer->create_object( $key );
+			}
 			$data = file_get_contents( $imageUrl );
 			$filename = '/dev/shm/' . rand(1, 9999) . '.' . $fileExtension;
 			file_put_contents( $filename, $data );
