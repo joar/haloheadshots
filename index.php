@@ -1,14 +1,21 @@
 <?php
-require 'config.php';
+$configCode = 'class config {
+  const reachKey = \'' . $_SERVER['REACH_KEY'] . '\';
+  const useCloudFiles = true;
+  const cloudFilesUser = \'' . $_SERVER['CLOUDFILES_USER'] . '\';
+  const cloudFilesKey = \'' . $_SERVER['CLOUDFILES_API_KEY'] . '\';
+  const cloudFilesApplicationExecutedImageTTL = 604800;
+}';
+
+eval($configCode);
 
 # This script is heavily dependent on the reachApiTools class
 require 'reachApiTools.php';
 
 require 'reachApiJson.php';
 require 'Savant3.php';
-require 'tools.class.php';
-require '/home/jwandborg/git/php-cloudfiles/cloudfiles.php';
-require '/home/jwandborg/git/predis/lib/Predis.php'; # // Not needed as long as ajax/autocomplete isn't working.
+require 'lib/tools.class.php';
+require 'lib/php-cloudfiles/cloudfiles.php';
 
 ini_set('user_agent', 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.8 Safari/534.7');
 
