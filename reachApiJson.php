@@ -10,6 +10,9 @@
 * Small fixes and memcache implementation by Joar Wandborg <http://github.com/jwandborg>
 */
 
+define('OBJECT', 2);
+define('ASSOC_ARRAY',  3);
+
 class reachJsonApi {
 
 	/*
