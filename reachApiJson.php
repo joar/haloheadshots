@@ -31,6 +31,8 @@ class reachJsonApi {
 	*/
 	public function __construct($apikey, $returnType=OBJECT, $cacheMechanism = 'memcache' )
 	{
+		$this->memcacheServer = $_SERVER['MEMCACHE_SERVER'] ? $_SERVER['MEMCACHE_SERVER'] : 'localhost';
+		$this->memcachePort = (int)$_SERVER['MEMCACHE_PORT'] ? $_SERVER['MEMCACHE_PORT'] : 11211;
 		$this->apiService = "http://www.bungie.net/api/reach/reachapijson.svc"; 
 		$this->apikey = $apikey;
 		if($returnType == ASSOC_ARRAY) {
