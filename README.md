@@ -2,17 +2,13 @@
 
 This is the code currently hosted on the site http://dev.haloheadshots.com/.
 
-# Dependencies
+# You need
 
-*	To get this code up and running, you must have a Rackspace Cloud Files 
-account. [Sign up for Rackspace Cloud Files](https://signup.rackspacecloud.com/signup).
-	*	Rackspace Cloud Files are used for caching of player images and emblems. 
-You can of course extend or modify this code to eliminate the need for a 
-Rackspace Cloud Files account. The recommendation is to cache images locally,
-or at Amazon S3 if you are that kind of a person. Bungie does not like the
-thought of serving over 9000 images every 9000th of a second via an IIS/7.5 
-server.
-*	Reach Stats API key
+*	A [Rackspace Cloud Files account](https://signup.rackspacecloud.com/signup) or 
+	an OpenStach Swift setup.  
+	Rackspace Cloud Files is used for caching of player images and emblems as 
+	recommended by Bungie.
+*	A Reach Stats API key
 
 
 # Setup
@@ -22,8 +18,14 @@ server.
 
 # Licensing
 
+Copyright (c) 2010, 2011, 2012, Joar Wandborg
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+*    Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+*    Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+*    Neither the name of the owner nor the names of the contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 You are free to use and develop this application under the circumstances that you
-
-*	Share alike and contribute your derivations to the original repository
-
-That is all.
